@@ -1,0 +1,7 @@
+{
+  
+  "env": {
+    "apiUrl": "https://consume.api.scaleaq-dev.net",
+    "authUrl": "https://scaleaqcustomerdev.b2clogin.com/scaleaqcustomerdev.onmicrosoft.com/B2C_1_password_credentials/oauth2/v2.0/token"
+  }
+}

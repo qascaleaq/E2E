@@ -1,0 +1,16 @@
+{
+  
+  "baseUrl": "https://consume.api.scaleaq-dev.net",
+  "chromeWebSecurity": false,
+  "defaultCommandTimeout": 10000,
+  "experimentalSessionAndOrigin": true,
+  "integrationFolder": "cypress/Tests",
+  "reporter": "mochawesome",
+  "reporterOptions": {
+    "html": false,
+    "json": true,
+    "overwrite": false,
+    "reportDir": "cypress/results"
+  },
+  "retries": 1
+}

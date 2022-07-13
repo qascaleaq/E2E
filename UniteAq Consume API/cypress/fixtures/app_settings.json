@@ -1,0 +1,9 @@
+{
+  "client_id": "9ca2963d-2d62-47c8-85dd-b183c49bb444",
+  "companyID": "3BA5FB11-FB49-4AD5-A4FA-1D578CD790FE",
+  "grant_type": "password",
+  "password": "*5Na7SZHy!HR9C",
+  "response_type": "id_token",
+  "scope": "openid 9ca2963d-2d62-47c8-85dd-b183c49bb444",
+  "username": "scaleaq.admin@scaleaq.com"
+}

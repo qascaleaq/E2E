@@ -1,0 +1,30 @@
+trigger:
+  branches:
+    include:
+      - master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+stages:
+  - stage: Test_stage
+    displayName: 'Test'
+    pool:
+      vmImage: 'ubuntu-latest'
+    jobs:
+      - job: Test_job
+        displayName: 'Test'
+        dependsOn: [  ]
+        steps:
+          - checkout: self
+            fetchDepth: 1 
+          - script: |
+              cd e2e
+              npm ci
+              docker run -v $PWD:/e2e -w /e2e cypress/included:9.4.1 || true
+          #- task: PublishTestResults@2
+           # inputs:
+            #  testRunner: VSTest
+             # testResultsFiles: '*.trx'
+              #failTaskOnFailedTests: true
+
